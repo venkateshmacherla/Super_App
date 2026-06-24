@@ -98,7 +98,7 @@ const Dashboard = () => {
                 <img
                   src={profile}
                   alt="profile"
-                  className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-full object-cover rounded-full sm:rounded-[100px] border-4 sm:border-[5px] border-white shadow-[0px_8px_7px_rgba(0,0,0,0.3)] mx-auto sm:mx-0 shrink-0"
+                  className="w-20 h-32 sm:w-24 sm:h-40 md:w-28 md:h-full object-cover rounded-full sm:rounded-[100px] border-4 sm:border-[5px] border-white shadow-[0px_8px_7px_rgba(0,0,0,0.3)] mx-auto sm:mx-0 shrink-0"
                 />
                 <div className="flex flex-col justify-center text-center sm:text-left">
                   <p className="text-white text-md sm:text-md">{user.name}</p>
@@ -203,7 +203,7 @@ const Dashboard = () => {
         <div className="w-full lg:w-[30%] flex flex-col">
           <div className="bg-white rounded-3xl overflow-hidden flex-1 flex flex-col">
             <img
-              src={article?.urlToImage || news}
+              src={article?.image_url || news}
               alt="news"
               className="w-full h-44 sm:h-52 lg:h-56 object-cover"
             />
@@ -212,13 +212,13 @@ const Dashboard = () => {
                 {article?.title}
               </h2>
               <p className="text-xs mt-1">
-                {article?.publishedAt
-                  ? new Date(article.publishedAt).toLocaleString()
+                {article?.pubDate
+                  ? new Date(article.pubDate).toLocaleString()
                   : ""}
               </p>
             </div>
             <div className="p-4 text-black text-sm leading-6 flex-1">
-              {article?.content || article?.description}
+              {article?.description}
             </div>
           </div>
 
