@@ -77,13 +77,13 @@ const Movies = () => {
               {movies[category]?.map((movie) => (
                 <div
                   key={movie.id}
-                  className="group relative aspect-16/10 w-full overflow-hidden rounded-xl bg-[#1a1a1a] shadow-lg shadow-black/40 transition-transform duration-200 ease-out hover:scale-[1.04] cursor-pointer"
+                  className="group relative aspect-15/10 w-full overflow-hidden rounded-xl bg-[#1a1a1a] shadow-lg shadow-black/40 transition-transform duration-200 ease-out hover:scale-[1.04] cursor-pointer"
                 >
                   <img
                     src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                     alt={movie.title}
                     loading="lazy"
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="absolute inset-0 h-full w-full  object-fill"
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                   <p className="absolute bottom-2 left-2 right-2 text-xs font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 line-clamp-2">
