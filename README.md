@@ -1,8 +1,8 @@
-# 🎬 Super App
+# Super App
 
 A React-based entertainment dashboard application built using Vite, React, Zustand, Tailwind CSS, and external APIs. The application allows users to register, select entertainment preferences, view personalized content, and explore movie recommendations.
 
-## 🚀 Features
+##  Features
 
 ### 1. User Registration
 
@@ -32,7 +32,7 @@ A React-based entertainment dashboard application built using Vite, React, Zusta
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -59,7 +59,7 @@ A React-based entertainment dashboard application built using Vite, React, Zusta
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```bash
 src
@@ -92,7 +92,7 @@ src
 └── App.jsx
 ```
 
-## ⚙️ Installation
+## Installation
 
 ### Clone Repository
 
@@ -136,7 +136,7 @@ http://localhost:5173
 
 ---
 
-## 📱 Application Flow
+## Application Flow
 
 ```text
 Registration
@@ -150,7 +150,7 @@ Movie Recommendations
 
 ---
 
-## 🎯 Assignment Requirements Covered
+## Assignment Requirements Covered
 
 - User Registration
 - Form Validation
@@ -169,7 +169,7 @@ Movie Recommendations
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Venkatesh Macharla
 
