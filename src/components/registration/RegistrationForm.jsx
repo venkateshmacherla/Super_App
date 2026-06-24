@@ -77,9 +77,9 @@ const RegistrationForm = () => {
   };
 
   return (
-    <div className="h-screen flex">
+    <div className="min-h-screen lg:h-screen flex flex-col lg:flex-row">
       {/* Left */}
-      <div className="w-1/2 relative">
+      <div className="hidden lg:block w-full lg:w-1/2 relative">
         <img
           src={registerBg}
           alt="register"
@@ -94,10 +94,10 @@ const RegistrationForm = () => {
       </div>
 
       {/* Right */}
-      <div className="w-1/2 bg-black flex items-center justify-center">
-        <div className="w-95">
+      <div className="w-full lg:w-1/2 bg-black flex items-center justify-center px-5 py-10 lg:px-0 lg:py-0">
+        <div className="w-full max-w-95 lg:w-95">
           <h1
-            className="text-[#72DB73] text-[58px] font-normal leading-[140%] text-center"
+            className="text-[#72DB73] text-[42px] lg:text-[58px] font-normal leading-[140%] text-center"
             style={{ fontFamily: "Single Day, cursive" }}
           >
             Super app
